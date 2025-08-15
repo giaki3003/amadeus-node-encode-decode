@@ -1,0 +1,27 @@
+[package]
+name = "amadeus_proto"
+version = "0.1.0"
+edition = "2021"
+description = "Amadeus protocol implementation in Rust with Elixir compatibility"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/amadeus-robot/amadeus_proto"
+
+[dependencies]
+aes-gcm = "0.10"
+aead = "0.5"
+rand_core = "0.6"
+getrandom = "0.2"
+sha2 = "0.10"
+blake3 = "1.5"
+reed-solomon-simd = "3.0.1"
+thiserror = "1"
+zeroize = { version = "1", features = ["zeroize_derive"] }
+blst = "0.3.15"
+hex = "0.4"
+
+[dev-dependencies]
+hex = "0.4"
+rand = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
